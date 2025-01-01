@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; 
+    color: #fff; 
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #1e1e1e; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f5f5f5;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input,
+.todo-date {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.todo-input::placeholder {
+    color: #aaa;
+}
+
+.add-button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #02421a;
+}
+
+
+.todo-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todo-item > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item > div span {
+    font-size: 16px;
+    color: #f5f5f5;
+    word-wrap: break-word;
+}
+
+.del-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e53935; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.del-button:hover {
+    background-color: #d49919;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .todo-input,
+    .todo-date {
+        font-size: 14px;
+    }
+
+    .add-button {
+        font-size: 14px;
+    }
+
+    .todo-item > div span {
+        font-size: 14px;
+    }
+}
